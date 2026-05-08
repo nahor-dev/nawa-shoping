@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - E-Shop</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+
+     <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <!-- LEFT: Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.jpg" class="logo" alt="Logo" />
+        </a>
+
+        <!-- RIGHT: Icons (ALWAYS visible) -->
+        <div class="nav-icons d-flex align-items-center">
+          <a href="account.html"><i class="fas fa-user"></i></a>
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#"><i class="fas fa-search"></i></a>
+
+          <!-- Burger -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!-- CENTER MENU -->
+        <div class="collapse navbar-collapse justify-content-center" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section id="contact-header" class="py-5">
+        <div class="container text-center">
+            <h2 class="text-uppercase">Contact Us</h2>
+            <p>Get in touch with our team</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact-details" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Have questions about our products or need help with your order? We're here to help!</p>
+
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-map-marker-alt fa-2x mb-2 text-primary"></i>
+                            <h5>Address</h5>
+                            <p>123 Street Name, City, State 12345</p>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-phone fa-2x mb-2 text-primary"></i>
+                            <h5>Phone</h5>
+                            <p>+01 2222 365</p>
+                            <p>+91 01 2345 6789</p>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-envelope fa-2x mb-2 text-primary"></i>
+                            <h5>Email</h5>
+                            <p>info@email.com</p>
+                            <p>support@email.com</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-clock fa-2x mb-2 text-primary"></i>
+                            <h5>Business Hours</h5>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 10:00 AM - 4:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="name">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="contact-map" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h3>Find Us</h3>
+                    <p>Visit our store location</p>
+                </div>
+                <div class="col-12">
+                    <div class="map-container" style="height: 400px; background: #f8f9fa; display: flex; align-items: center; justify-content: center; border-radius: 10px;">
+                        <div class="text-center">
+                            <i class="fas fa-map-marked-alt fa-4x text-primary mb-3"></i>
+                            <h5>Interactive Map</h5>
+                            <p>Map integration would go here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+                <img class="footer-logo" src="img/logo.jpg" alt="E-Shop Logo">
+                <p class="pt-3">We provide the best products for the most affordable prices</p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase">
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">boys</a></li>
+                    <li><a href="#">girls</a></li>
+                    <li><a href="#">new arrivals</a></li>
+                    <li><a href="#">clothes</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>123 Street Name, City</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>+01 2222 365 / (+91) 01 2345 6789</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>info@email.com</p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                    <img src="img/insta/1.jpg" class="img-fluid w-25 h-100 m-2" alt="Instagram 1"/>
+                    <img src="img/insta/2.jpg" class="img-fluid w-25 h-100 m-2" alt="Instagram 2"/>
+                    <img src="img/insta/3.jpg" class="img-fluid w-25 h-100 m-2" alt="Instagram 3"/>
+                    <img src="img/insta/4.jpg" class="img-fluid w-25 h-100 m-2" alt="Instagram 4"/>
+                    <img src="img/insta/5.jpg" class="img-fluid w-25 h-100 m-2" alt="Instagram 5"/>
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-5 col-sm-12 mb-4">
+                    <img src="img/payment.png" alt="Payment Methods"/>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 mb-4 text-nowrap mb-2">
+                    <p>eCommerce @ 2024 All Right Reserved</p>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 mb-4 ml-auto text-right">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5J8ERdknLPMO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+

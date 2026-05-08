@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - E-Shop</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.jpg" class="logo" alt="Logo" />
+        </a>
+
+        <div class="nav-icons d-flex align-items-center">
+          <a href="account.html"><i class="fas fa-user"></i></a>
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#"><i class="fas fa-search"></i></a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse justify-content-center" id="menu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section id="shop-header" class="py-5">
+        <div class="container text-center">
+            <h2 class="text-uppercase">Our Shop</h2>
+            <p>Discover amazing products at great prices</p>
+        </div>
+    </section>
+
+    <!-- Shop Products -->
+    <section id="shop-products" class="py-5">
+        <div class="container">
+            <!-- Filter/Sort Bar -->
+            <div class="row mb-4">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="d-flex">
+                        <div class="dropdown me-3">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                                <li><a class="dropdown-item" href="#all">All Products</a></li>
+                                <li><a class="dropdown-item" href="#shoes">Shoes</a></li>
+                                <li><a class="dropdown-item" href="#clothes">Clothes</a></li>
+                                <li><a class="dropdown-item" href="#watches">Watches</a></li>
+                                <li><a class="dropdown-item" href="#accessories">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sort by
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+                                <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                                <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+                                <li><a class="dropdown-item" href="#">Newest</a></li>
+                                <li><a class="dropdown-item" href="#">Popular</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 text-end">
+                    <p class="mb-0">Showing 1-12 of 26 results</p>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/1.jpg" alt="Product 1"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Casual Sneakers</h5>
+                        <h4 class="p-price">$89.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/2.jpg" alt="Product 2"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Running Shoes</h5>
+                        <h4 class="p-price">$129.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/3.jpg" alt="Product 3"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Sports Jacket</h5>
+                        <h4 class="p-price">$79.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/4.jpg" alt="Product 4"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Digital Watch</h5>
+                        <h4 class="p-price">$199.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/5.jpg" alt="Product 5"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Leather Bag</h5>
+                        <h4 class="p-price">$149.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/6.jpg" alt="Product 6"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Summer Dress</h5>
+                        <h4 class="p-price">$69.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/7.jpg" alt="Product 7"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Casual Shirt</h5>
+                        <h4 class="p-price">$49.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/8.jpg" alt="Product 8"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Smart Watch</h5>
+                        <h4 class="p-price">$299.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/9.jpg" alt="Product 9"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Winter Jacket</h5>
+                        <h4 class="p-price">$159.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/10.jpg" alt="Product 10"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Formal Shoes</h5>
+                        <h4 class="p-price">$179.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/11.jpg" alt="Product 11"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Designer Bag</h5>
+                        <h4 class="p-price">$249.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="product">
+                        <img class="img-fluid mb-3" src="img/shop/12.jpg" alt="Product 12"/>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name">Sports Cap</h5>
+                        <h4 class="p-price">$29.99</h4>
+                        <button class="buy-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+                <img class="footer-logo" src="img/logo.jpg" alt="E-Shop Logo">
+                <p class="pt-3">We provide the best products for the most affordable prices</p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase">
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">boys</a></li>
+                    <li><a href="#">girls</a></li>
+                    <li><a href="#">new arrivals</a></li>
+                    <li><a href="#">clothes</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>123 Street Name, City</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>+01 2222 365 / (+91) 01 2345 6789</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>info@email.com</p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-sm-12">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                    <img src="img/insta/1.jpg" class="img-fluid w-25 h-100 m-2" alt="Instagram 1"/>
+                    <img src="img/insta/2.jpg" class="img-fluid w-25 h-100 m-2" alt="Instagram 2"/>
+                    <img src="img/insta/3.jpg" class="img-fluid w-25 h-100 m-2" alt="Instagram 3"/>
+                    <img src="img/insta/4.jpg" class="img-fluid w-25 h-100 m-2" alt="Instagram 4"/>
+                    <img src="img/insta/5.jpg" class="img-fluid w-25 h-100 m-2" alt="Instagram 5"/>
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-5 col-sm-12 mb-4">
+                    <img src="img/payment.png" alt="Payment Methods"/>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 mb-4 text-nowrap mb-2">
+                    <p>eCommerce @ 2024 All Right Reserved</p>
+                </div>
+                <div class="col-lg-3 col-md-5 col-sm-12 mb-4 ml-auto text-right">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5J8ERdknLPMO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
