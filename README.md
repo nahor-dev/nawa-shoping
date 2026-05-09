@@ -50,4 +50,19 @@ This project demonstrates a clean online shopping experience with product showca
 - The project is a static front-end demo and does not include server-side checkout.
 
 ## Author
-Nawas
+nahor
+
+
+## Screenshots
+
+### Homepage
+![Homepage](assets/home.png)
+
+### Products
+![Products](assets/products.png)
+
+### Cart
+![Cart](assets/cart.png)
+
+### mobile
+![mobile](assets/mobile.png)
